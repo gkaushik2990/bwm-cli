@@ -8,11 +8,14 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "spec":{
+          "component":false
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "bwm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
