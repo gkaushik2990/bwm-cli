@@ -5,6 +5,7 @@ import { RentalListComponent } from './rental-list/rental-list.component';
 import { RentalListItemComponent } from './rental-list-item/rental-list-item.component';
 import { RentalDetailComponent } from './rental-detail/rental-detail.component';
 import { RentalmoduleRoutingModule } from './rentalmodule-routing.module';
+import { NgPipesModule } from 'ngx-pipes';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { RentalmoduleRoutingModule } from './rentalmodule-routing.module';
   ],
   imports: [
     CommonModule,
-    RentalmoduleRoutingModule
+    RentalmoduleRoutingModule,
+    NgPipesModule
   ],
   exports:[
   ]
