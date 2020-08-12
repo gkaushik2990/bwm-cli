@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class RentalDetailComponent implements OnInit {
 
   currentId:string;
-  rentalDisp:Rental;
+  rental:Rental;
 
   constructor(private route: ActivatedRoute,
               private rentalService:RentalserviceService
@@ -23,8 +23,8 @@ export class RentalDetailComponent implements OnInit {
         this.currentId = params['rentalId'];
         this.rentalService.getRentalDetail(this.currentId).subscribe(
           (data)=>{
-            this.rentalDisp = data;
-            console.log(this.rentalDisp);
+            this.rental = data;
+            console.log(this.rental);
           },
           (err)=>{
 
